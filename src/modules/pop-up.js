@@ -1,5 +1,6 @@
-import { revertChanges, loadComments } from "./comments.js";
-import { updatingpopupHtml, loadReservations } from "./reservations.js";
+import { revertChanges, loadComments } from './comments.js';
+import { updatingpopupHtml, loadReservations } from './reservations.js';
+
 export const movieBtn = document.querySelectorAll('.movie-btn');
 const popUpContainer = document.querySelector('#pop-up-container');
 export const openPopup = () => {
@@ -82,7 +83,7 @@ export const fillPopupwithinfo = (e) => {
     movieid.textContent = hiddenPopupinfo.id;
     movieInfo2Element.textContent = hiddenPopupinfo.language;
     movieInfo3Element.textContent = hiddenPopupinfo.type;
-    movieImage.setAttribute('src', hiddenPopupinfo.imagesource)
+    movieImage.setAttribute('src', hiddenPopupinfo.imagesource);
     movieInfo4Element.textContent = `${hiddenPopupinfo.genreArray[0]}, ${hiddenPopupinfo.genreArray[1]}, ${hiddenPopupinfo.genreArray[2]}`;
   }
 };
@@ -108,4 +109,4 @@ export const handlepopup = (button) => {
       }
     });
   });
-}
+};
