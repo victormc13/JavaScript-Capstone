@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAMovies</title>
-    <script src="https://kit.fontawesome.com/51ef778fad.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="60454ddcf8f7c0523176.png" type="image/x-icon">
-    <link rel="stylesheet" href="57011448dc08b9372b5e.css">
-<script defer src="main.js"></script></head>
-<body>
-    <div id="container">
-        <div class="overlay"></div>
-        <header>
-            <img src="60454ddcf8f7c0523176.png" alt="vamovies-logo">
-            <ul>
-                <li class="movie-list1">Showing Now Worldwide</li>
-                <li class="movie-list2">Future Showings</li>
-                <li class="movie-list3">Showing now Locally</li>
-            </ul>
-        </header>
-        <footer>
-            Created by Victor and Austin
-        </footer>
-    </div>
-</body>
-</html>
+<head><script defer src="main.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module Error (from ./node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 29, column 28; to line 29, column 34)
+  ModuleError: Module Error (from ./node_modules/html-loader/dist/cjs.js):
+  HtmlSourceError: Bad value for attribute "src" on element "img": Must be non-empty (From line 29, column 28; to line 29, column 34)
+      at Object.emitError (D:\Microverse2023\Module-2\Module2.2\JavaScript-Capstone\JavaScript-Capstone\node_modules\webpack\lib\NormalModule  .js:614:6)
+      at Object.loader (D:\Microverse2023\Module-2\Module2.2\JavaScript-Capstone\JavaScript-Capstone\node_modules\html-loader\dist\index.js:5  9:10)
+  
+  - NormalModule.js:614 Object.emitError
+    [JavaScript-Capstone]/[webpack]/lib/NormalModule.js:614:6
+  
+  - index.js:59 Object.loader
+    [JavaScript-Capstone]/[html-loader]/dist/index.js:59:10
+  
+  - child-compiler.js:169 
+    [JavaScript-Capstone]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [JavaScript-Capstone]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [JavaScript-Capstone]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1200 
+    [JavaScript-Capstone]/[webpack]/lib/Compiler.js:1200:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [JavaScript-Capstone]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1196 
+    [JavaScript-Capstone]/[webpack]/lib/Compiler.js:1196:33
+  
+  - Compilation.js:2795 finalCallback
+    [JavaScript-Capstone]/[webpack]/lib/Compilation.js:2795:11
+  
+  - Compilation.js:3100 
+    [JavaScript-Capstone]/[webpack]/lib/Compilation.js:3100:11
+  
+  
+</pre>

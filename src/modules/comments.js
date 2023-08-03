@@ -1,8 +1,10 @@
+import { updateCommentCount } from './updateCommentCount.js';
+
 export const nameofperson = document.querySelector('#name-of-commenter');
 export const comment = document.querySelector('#comment');
 export const submit = document.querySelector('#comment-button');
 export const commentList = document.querySelector('.pop-up').querySelector('.comments-display');
-​
+
 class Form {
   constructor(itemid, name, comment) {
     this.item_id = itemid;
@@ -20,24 +22,7 @@ export const validationcomments = (form) => {
     return true
   }
 }
-​
-export const updateCommentCount = (form) => {
-  const popupContainer = document.querySelector('#pop-up-container');
-  const list = popupContainer.querySelector('.comments-display');
-  const header = popupContainer.querySelector('h4');
-  const formcount = form.children.length;
-​
-  if (list && header) {
-    const listItems = popupContainer.querySelector('ul');
-    const count = listItems.children.length;
-    const commentType = formcount === 3 ? 'Comments' : 'Reservations';
-    const displayCount = count > 0 ? `(${count})` : '0'; // Empty string if count is 0
-    header.textContent = `${commentType} ${displayCount}`;
-  } else {
-    console.error("Required elements not found in the DOM.");
-  }
-};
-​
+
 export const postComment = async () => {
   console.log('fired postcomment')
   const namevalue = nameofperson.value;
