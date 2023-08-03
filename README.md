@@ -16,6 +16,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -82,11 +83,11 @@
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
+## 🚀 Live Demo <a name="live-demo"></a>
 
 <!-- > Add a link to your deployed project. -->
 
-<!-- - [JavaScript-Capstone](https://victormc13.github.io/JavaScript-Capstone/) -->
+- [JavaScript-Capstone(video)](https://drive.google.com/file/d/16A2lyinKh8LzZwWwKmuhI4ByM5XZtMLt/view?usp=drive_link)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
