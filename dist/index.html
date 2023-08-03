@@ -6,7 +6,7 @@
     <title>VAMovies</title>
     <script src="https://kit.fontawesome.com/51ef778fad.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="60454ddcf8f7c0523176.png" type="image/x-icon">
-    <link rel="stylesheet" href="57011448dc08b9372b5e.css">
+    <link rel="stylesheet" href="4075c4731db78eeb009c.css">
 <script defer src="main.js"></script></head>
 <body>
     <div id="container">
@@ -14,11 +14,50 @@
         <header>
             <img src="60454ddcf8f7c0523176.png" alt="vamovies-logo">
             <ul>
-                <li class="movie-list1">Showing Now Worldwide</li>
+                <li class="movie-list1">Showing Now Worldwide <span class="movies-counter"></span></li>
                 <li class="movie-list2">Future Showings</li>
                 <li class="movie-list3">Showing now Locally</li>
             </ul>
         </header>
+        <div id="article-container" class="background-pattern"></div>
+            <div id="pop-up-container">
+              <span class="hidden-class id-pop-up"></span>
+                <div class="pop-up">
+                    <i class="fa-solid fa-xmark" id="cancel-icon"></i>
+                  <div class="pop-up-content">
+                    <div class="movie-img">
+                      <img alt="movie-image">
+                    </div>
+                    <div class="movie-info">
+                        <h3 id="movie-name"></h3>
+                        <div class="movie-details">
+                        <span class="desc">OVERVIEW</span>
+                        <div class="movie-info1 "></div>
+                        <span class="desc">LANGUAGE</span>
+                        <div class="movie-info2"></div>
+                        <span class="desc">RELEASE DATE</span>
+                        <div class="movie-info3"></div>
+                        <span class="desc">OVERVIEW</span>
+                        <div class="movie-info4"></div>
+                        </div>
+                    </div>
+                    <div class="movie-comment-section">
+                        <h4>Comments:</h4>
+                        <ul class="comments-display">
+                        </ul>
+                      <h5 class="add-comment">Add a Comment</h5>
+                      <div class="input-area">
+                      <form action="" novalidate>
+                        <input type="text" name="" id="name-of-commenter" placeholder="name of commenter" maxlength="10" required>
+                        <!-- <input type="datetime" name="" id="datetime"> -->
+                      <textarea name="" id="comment" placeholder="insights" cols="30" rows="10"  maxlength="180"></textarea>
+                      <button type="submit" id="comment-button">Comment</button>
+                    </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         <footer>
             Created by Victor and Austin
         </footer>

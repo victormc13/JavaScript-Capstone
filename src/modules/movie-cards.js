@@ -1,4 +1,6 @@
+/* eslint-disable no-underscore-dangle */
 import { loadLikes, updateAPIlikes } from './likes.js';
+import moviesCount from './moviesCount.js';
 import { handlepopup } from './pop-up.js';
 
 export const movieList1 = document.querySelectorAll('.movie-list1');
@@ -74,6 +76,8 @@ export const fetchMOviecards = async (url) => {
       const BUTTON = movieCardElement.querySelectorAll('.movie-btn');
       handlepopup(BUTTON);
       movieCardsContainer.appendChild(movieCardElement);
+
+      moviesCount();
     });
   } catch (error) {
     console.error('Error fetching data:', error);

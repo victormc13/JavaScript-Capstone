@@ -8,10 +8,14 @@
     "build": "webpack",
     "start": "webpack serve --open"
   },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
@@ -21,6 +25,7 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.1",
     "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.2",
     "stylelint": "^13.13.1",

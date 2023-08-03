@@ -5,7 +5,7 @@
       import setAttributes from "!../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js";
       import insertStyleElement from "!../node_modules/style-loader/dist/runtime/insertStyleElement.js";
       import styleTagTransformFn from "!../node_modules/style-loader/dist/runtime/styleTagTransform.js";
-      import content, * as namedExport from "!!../node_modules/css-loader/dist/cjs.js!./style.css";
+      import content, * as namedExport from "!!../node_modules/css-loader/dist/cjs.js!./styles.css";
       
       
 
@@ -23,5 +23,5 @@ var update = API(content, options);
 
 
 
-export * from "!!../node_modules/css-loader/dist/cjs.js!./style.css";
+export * from "!!../node_modules/css-loader/dist/cjs.js!./styles.css";
        export default content && content.locals ? content.locals : undefined;

@@ -194,9 +194,8 @@ Example:
 
 👤 **Austin**
 
-- GitHub: [@victormc13](https://github.com/victormc13)
-- Twitter: [@VctorMC20](https://twitter.com/VctorMC20)
-- LinkedIn: [Victor MC](https://www.linkedin.com/in/victormc13/)
+- GitHub: [@stino-x](https://github.com/stino-x)
+- LinkedIn: [Iheagwara Augustine](https://www.linkedin.com/in/augustine-iheagwara-644b11228/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

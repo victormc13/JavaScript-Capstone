@@ -1,11 +1,11 @@
 import './styles.css';
 import {
   fetchMOviecards, movieList1, movieList2, movieList3,
-} from './movie-cards.js';
-import locationInfo from './geolocation.js';
-import { ResetComments, postComment, validationcomments } from './comments.js';
-import { ResetReservations, postReservation, validation } from './reservations.js';
-import { fetchPeople } from './people.js';
+} from './modules/movie-cards.js';
+import { ResetComments, postComment, validationcomments } from './modules/comments.js';
+import { ResetReservations, postReservation, validation } from './modules/reservations.js';
+import { fetchPeople } from './modules/people.js';
+import locationInfo from './modules/geolocation.js';
 
 const heightofContainer = document.querySelector('#article-container').clientHeight * 0.3;
 const footerTop = () => {

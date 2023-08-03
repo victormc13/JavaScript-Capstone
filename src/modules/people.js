@@ -60,7 +60,6 @@ export const updatingpopupHtmlforPeople = (e, Formi) => {
     const textarea = form.querySelector('textarea');
     if (textarea) {
       const firstInput = form.querySelector('#name-of-commenter');
-      const button = form.querySelector('button');
       const regex = /^\d{4}-\d{2}-\d{2}$/;
       const newInput1 = document.createElement('input');
       newInput1.addEventListener('input', () => {
@@ -111,7 +110,7 @@ export const updatingpopupHtmlforPeople = (e, Formi) => {
 export const handlepopupforPeople = (button) => {
   button.forEach((btn) => {
     const FORM = document.querySelector('form');
-    const numElements = FORM.elements.length;
+    // const numElements = FORM.elements.length;
     btn.addEventListener('click', (e) => {
       openPopup();
       centerModal();
