@@ -1,6 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 import { loadLikes, updateAPIlikes } from './likes.js';
+import moviesCount from './moviesCount.js';
 import { handlepopup } from './pop-up.js';
-import { moviesCount } from './moviesCount.js';
 
 export const movieList1 = document.querySelectorAll('.movie-list1');
 export const movieList2 = document.querySelectorAll('.movie-list2');
