@@ -87,7 +87,7 @@
 
 <!-- > Add a link to your deployed project. -->
 
-- [JavaScript-Capstone(video)](https://drive.google.com/file/d/16A2lyinKh8LzZwWwKmuhI4ByM5XZtMLt/view?usp=drive_link)
+- [JavaScript-Capstone(video)](https://drive.google.com/file/d/16A2lyinKh8LzZwWwKmuhI4ByM5XZtMLt/view?usp=drive_link) 
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
