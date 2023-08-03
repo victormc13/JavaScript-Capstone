@@ -22,6 +22,7 @@ describe('updateCommentCount', () => {
         <form>
           <div>Child 1</div>
           <div>Child 2</div>
+          <div>Child 3</div>
         </form>
       </div>
     `;
@@ -50,6 +51,7 @@ describe('updateCommentCount', () => {
           <div>Child 1</div>
           <div>Child 2</div>
           <div>Child 3</div>
+          <div>Child 4</div>
         </form>
       </div>
     `;
@@ -75,6 +77,7 @@ describe('updateCommentCount', () => {
         </div>
         <form class="comments-form"> <!-- Add a comment type class -->
           <div>Child 1</div>
+          <div>Child 2</div>
           <div>Child 2</div>
         </form>
       </div>

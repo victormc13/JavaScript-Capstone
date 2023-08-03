@@ -7,7 +7,7 @@ const updateCommentCount = (form) => {
   if (list && header) {
     const listItems = popupContainer.querySelector('ul');
     const count = listItems.children.length;
-    const commentType = formcount < 3 ? 'Comments' : 'Reservations';
+    const commentType = formcount <= 3 ? 'Comments' : 'Reservations';
     const displayCount = count > 0 ? `(${count})` : '0'; // Empty string if count is 0
     header.textContent = `${commentType} ${displayCount}`;
   } else {
