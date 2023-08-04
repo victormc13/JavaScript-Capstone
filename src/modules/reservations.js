@@ -22,12 +22,6 @@ export const validation = (form) => {
 export const ResetReservations = (form) => {
   // const form = form.querySelector('form');
   form.reset();
-
-  // inputs.forEach((input) => {
-  //   input.value = '';
-  //   input.style.border === 'none';
-  // });
-  // return true;
 };
 
 class Reservation {
