@@ -24,7 +24,6 @@ export const updateAPIlikes = async (e) => {
       body: JSON.stringify(Likeobject),
     });
     if (response.status === 201) {
-      console.log('Like has been updated');
       const likecount = e.target.closest('article').querySelector('.count-likes');
       const currentCount = parseInt(likecount.textContent, 10);
       const newCount = currentCount + 1;
@@ -39,7 +38,6 @@ export const loadLikes = async (movieCard) => {
   const getrequest = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/49RqYGIcArZ2U5ymFK37/likes');
   const data = await getrequest.json();
   if (getrequest.ok) {
-    console.log('Like have loaded');
     const likecount = article.querySelector('.count-likes');
     data.forEach((MOVIELIKE) => {
       if (MOVIELIKE.item_id === idtextContent) {

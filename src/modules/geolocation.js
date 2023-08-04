@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 const apiKey = '294b967cd6b04078ac7ded19316b344b';
 const apiUrl = 'https://api.ipgeolocation.io/ipgeo';
 // Construct the API URL with the API key as a query parameter
@@ -15,5 +14,6 @@ const locationInfo = async () => {
       time: dateOnlyString,
     };
   }
+  throw new Error(`Error: ${response.status}`);
 };
 export default locationInfo;

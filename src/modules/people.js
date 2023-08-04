@@ -51,7 +51,6 @@ export const fillPopupwithinfoforPeople = (e) => {
 
 export const updatingpopupHtmlforPeople = (e, Formi) => {
   if (Formi.elements.length === 3) {
-    console.log('HTML UPDATED to reservations mode');
     fillPopupwithinfoforPeople(e);
     const popupContainer = document.querySelector('#pop-up-container');
     const nameofsection = popupContainer.querySelector('h4');
@@ -138,7 +137,6 @@ export const fetchPeople = async (url) => {
     const movieCards = data.slice(0, 9);
     const movieCardsContainer = document.querySelector('#article-container');
     movieCardsContainer.innerHTML = '';
-    console.log(movieCards);
 
     movieCards.forEach((movieCard) => {
       if (movieCard) {
@@ -172,11 +170,10 @@ export const fetchPeople = async (url) => {
 
         movieCardsContainer.appendChild(movieCardElement);
       } else {
-        console.error('Invalid movie card data:', movieCard);
-        console.log(movieCard);
+        throw new Error('Invalid movie card data:', movieCard);
       }
     });
   } catch (error) {
-    console.error('Error fetching data:', error);
+    throw new Error('Error fetching data:', error);
   }
 };

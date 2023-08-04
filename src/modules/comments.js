@@ -23,7 +23,6 @@ export const validationcomments = (form) => {
 };
 
 export const postComment = async () => {
-  console.log('fired postcomment');
   const namevalue = nameofperson.value;
   const commentvalue = comment.value;
   const id = document.querySelector('#pop-up-container').querySelector('.id-pop-up');
@@ -57,7 +56,6 @@ export const postComment = async () => {
 export const ResetComments = (form) => {
   const input = form.querySelector('input');
   const textArea = form.querySelector('textarea');
-  console.log('form has been reset');
   input.value = '';
   textArea.value = '';
 };

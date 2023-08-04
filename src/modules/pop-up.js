@@ -90,7 +90,6 @@ export const fillPopupwithinfo = (e) => {
 
 export const updatingpopupHtml = (e, Formi) => {
   if (Formi.elements.length === 3) {
-    console.log('HTML UPDATED to reservations mode');
     fillPopupwithinfo(e);
     const popupContainer = document.querySelector('#pop-up-container');
     const nameofsection = popupContainer.querySelector('h4');
@@ -109,7 +108,6 @@ export const updatingpopupHtml = (e, Formi) => {
         } else {
           newInput1.style.border = '2px solid red';
           newInput1.reportValidity();
-          // newInput1.blur();
           newInput1.setCustomValidity('please let date match this pattern YYYY-MM-DD !!!');
         }
       });
@@ -127,7 +125,6 @@ export const updatingpopupHtml = (e, Formi) => {
       newInput2.setAttribute('class', 'reservationinput');
       newInput2.placeholder = 'end date';
       newInput2.maxLength = 25;
-      // newInput2.setAttribute('pattern', regex);
       newInput2.required = true;
       submit.textContent = 'Reserve';
       newInput2.addEventListener('input', () => {
@@ -137,7 +134,6 @@ export const updatingpopupHtml = (e, Formi) => {
         } else {
           newInput2.style.border = '2px solid red';
           newInput2.reportValidity();
-          // newInput2.blur();
           newInput2.setCustomValidity('please let date match this pattern YYYY-MM-DD !!!');
         }
       });
@@ -154,7 +150,6 @@ export const updatingpopupHtml = (e, Formi) => {
 export const handlepopup = (button) => {
   button.forEach((btn) => {
     const FORM = document.querySelector('form');
-    // const numElements = FORM.elements.length;
     btn.addEventListener('click', (e) => {
       openPopup();
       centerModal();

@@ -11,7 +11,7 @@ const updateCommentCount = (form) => {
     const displayCount = count > 0 ? `(${count})` : '0'; // Empty string if count is 0
     header.textContent = `${commentType} ${displayCount}`;
   } else {
-    console.error('Required elements not found in the DOM.');
+    throw new Error('Required elements not found in the DOM.');
   }
 };
 

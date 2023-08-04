@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable consistent-return */
 import {
   nameofperson, commentList,
 } from './comments.js';
@@ -9,7 +7,6 @@ const popupContainer = document.querySelector('#pop-up-container');
 const FORM = document.querySelector('form');
 
 export const validation = (form) => {
-  console.log('form val is running');
   const numElements = form.elements.length;
   if (numElements === 4) {
     const newInput1 = form.querySelector('#date1');
@@ -19,15 +16,18 @@ export const validation = (form) => {
     }
     return true;
   }
+  return true;
 };
 
 export const ResetReservations = (form) => {
-  const inputs = form.querySelectorAll('input');
-  console.log('form has been reset');
-  inputs.forEach((input) => {
-    input.value = '';
-    input.style.border === 'none';
-  });
+  // const form = form.querySelector('form');
+  form.reset();
+
+  // inputs.forEach((input) => {
+  //   input.value = '';
+  //   input.style.border === 'none';
+  // });
+  // return true;
 };
 
 class Reservation {
@@ -41,7 +41,6 @@ class Reservation {
 
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/49RqYGIcArZ2U5ymFK37/reservations';
 export const postReservation = async () => {
-  console.log('fired postRESERVE');
   const id = document.querySelector('#pop-up-container').querySelector('.id-pop-up');
   const startdate = popupContainer.querySelector('#date1');
   const enddate = popupContainer.querySelector('#date2');
@@ -78,7 +77,6 @@ export const loadReservations = async (e) => {
   const article = e.target.closest('article');
   const articleid = article.querySelector('.id');
   const idtextContent = articleid.textContent;
-  console.log(idtextContent);
   commentList.innerHTML = '';
   const getrequest = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/49RqYGIcArZ2U5ymFK37/reservations?item_id=${idtextContent}`);
   const data = await getrequest.json();
