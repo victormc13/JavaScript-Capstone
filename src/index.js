@@ -1,6 +1,6 @@
 import './styles.css';
 import {
-  fetchMOviecards, movieList1, movieList2, movieList3,
+  fetchMOviecards, fetchMOviecards2, movieList1, movieList2, movieList3,
 } from './modules/movie-cards.js';
 import { ResetComments, postComment, validationcomments } from './modules/comments.js';
 import { ResetReservations, postReservation, validation } from './modules/reservations.js';
@@ -19,7 +19,7 @@ const fetchLocationAndMovieCards = async () => {
   movieList1.forEach((btn) => { btn.addEventListener('click', () => { fetchMOviecards('https://api.tvmaze.com/shows'); }); });
   movieList2.forEach((btn) => {
     btn.addEventListener('click', () => {
-      fetchMOviecards('https://api.tvmaze.com/schedule/full');
+      fetchMOviecards2('https://api.tvmaze.com/shows?embed=episodes');
     });
   });
   movieList3.forEach((btn) => {
